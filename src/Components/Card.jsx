@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { routes } from "../routes";
+import React from "react";
+import { Link } from "react-router-dom";
+
 import { useGlobalSates } from "./utils/Context";
 
 const Card = ({ name, username, id }) => {

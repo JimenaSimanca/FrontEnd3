@@ -21,14 +21,29 @@ code {
 
 h1{
   text-align: center;
+  margin: 0;
 }
-
+h2{
+  margin: 0;
+}
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+  
+  justify-content: space-between;
+  padding: 0;
 }
+.contact{
+  height:50vw;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+}
+#imgNavbar{
+  display: flex;
+
+}
+
 
 a{
   color: #000;
@@ -42,16 +57,22 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: 98;
   height: 40px;
-  margin-top: 2rem;
+  
 }
+#footerText{
+display: flex;
 
+}
+.footerImages{
+  display: flex;
+}
 footer > img{
   width: 200px;
   margin: 0;
@@ -88,7 +109,7 @@ form{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
+  width: 100vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -112,11 +133,19 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+.btnNavBar{
+  height: 30px;
+  display: flex;
+  margin: 20px;
+}
 .dark{
   background-color: #12121296;
   color: white;
 }
 .dark > a {
   color: white;
+}
+.icon{
+  color: #000;
+  margin: 4px;
 }
