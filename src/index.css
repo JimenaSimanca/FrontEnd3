@@ -23,9 +23,7 @@ h1{
   text-align: center;
   margin: 0;
 }
-h2{
-  margin: 0;
-}
+
 nav{
   display: flex;
   
@@ -33,7 +31,7 @@ nav{
   padding: 0;
 }
 .contact{
-  height:50vw;
+  height:33vw;
 }
 .links{
   display: flex;
@@ -57,14 +55,24 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
   width: 98;
   height: 40px;
+  justify-content: space-between;
   
+}
+.volver{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+.ultimo{display: flex;
+  justify-content: space-between;
+  text-align: center;
+
 }
 #footerText{
 display: flex;
@@ -146,6 +154,8 @@ tr:nth-child(even) {
   color: white;
 }
 .icon{
-  color: #000;
-  margin: 4px;
+  width: 25px;
+    height: 25px;
+    filter: invert(1);
+    padding: 0 15px;
 }
