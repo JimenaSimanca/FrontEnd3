@@ -32,7 +32,7 @@ const Form = () => {
           value={user.name}
           onChange={(e) => setUser({ ...user, name: e.target.value })}
           placeholder="Full name"
-        />
+        ></input>
 
         <input
           type="text"
