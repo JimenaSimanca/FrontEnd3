@@ -21,13 +21,13 @@ const Detail = () => {
     fetchData();
   }, []);
   return (
-    <div className={` ${state.theme}`}>
+    <div className={` ${state.theme} detail` }>
       <h1>Detail Dentist {id} </h1>
 
-      <p>name={odontologo.name}</p>
-      <p>email={odontologo.email}</p>
-      <p>phone={odontologo.phone}</p>
-      <p>webSitw={odontologo.website}</p>
+      <p className={`information`}>Name: {odontologo.name}</p>
+      <p className={`information`}>Email: {odontologo.email}</p>
+      <p className={`information`}>Phone: {odontologo.phone}</p>
+      <p className={`information`}>WebSite: {odontologo.website}</p>
 
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}

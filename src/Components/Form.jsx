@@ -27,19 +27,22 @@ const Form = () => {
   return (
     <>
       <form className="formContact" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={user.name}
-          onChange={(e) => setUser({ ...user, name: e.target.value })}
-          placeholder="Full name"
-        ></input>
-
-        <input
-          type="text"
-          value={user.email}
-          onChange={(e) => setUser({ ...user, email: e.target.value })}
-          placeholder="Email"
-        />
+        <label htmlFor="name">Ingresa tu nombre</label> 
+          <input
+            type="text"
+            value={user.name}
+            onChange={(e) => setUser({ ...user, name: e.target.value })}
+            placeholder="Full name"
+            id="name"
+          ></input>
+        <label htmlFor="email">Ingresa tu e-mail</label>
+          <input
+            type="text"
+            value={user.email}
+            onChange={(e) => setUser({ ...user, email: e.target.value })}
+            placeholder="Email"
+            id="email"
+          />
         <button>Send</button>
       </form>
       <h2>{message}</h2>

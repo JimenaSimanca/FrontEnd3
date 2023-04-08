@@ -13,10 +13,7 @@ const Card = ({ name, username, id }) => {
     if (!encontrar) {
       favoritos.push(odontologo);
     }
-
-    localStorage.setItem("favs", JSON.stringify(favoritos));
   };
-
   return (
     <div className={`card ${state.theme}`}>
       {/* En cada card deberan mostrar en name - username y el id */}
@@ -33,9 +30,10 @@ const Card = ({ name, username, id }) => {
       </Link>
       <button onClick={addFav} className="favButton">
         Add fav
-      </button>
+      </button> 
+      
     </div>
   );
-};
+  };
 
 export default Card;

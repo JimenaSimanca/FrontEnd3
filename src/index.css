@@ -26,12 +26,14 @@ h1{
 
 nav{
   display: flex;
-  
   justify-content: space-between;
   padding: 0;
 }
 .contact{
   height:33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .links{
   display: flex;
@@ -39,7 +41,8 @@ nav{
 }
 #imgNavbar{
   display: flex;
-
+  width: 500px;
+  height: auto;
 }
 
 
@@ -64,10 +67,8 @@ footer {
   
 }
 .volver{
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  width: 90vw;
+  background-color: rgb(182, 121, 252);
+  width: 10vw;
 }
 .ultimo{display: flex;
   justify-content: space-between;
@@ -82,24 +83,28 @@ display: flex;
   display: flex;
 }
 footer > img{
-  width: 200px;
+  width: 300px;
   margin: 0;
 }
 footer > p{
   margin: 0;
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
 }
 h2{
   margin: 0;
 }
 
-form{
+.formContact{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 300px;
-  height: 100px;
+  height: 150px;
   margin: 0 auto;
+  border: solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.163);
 }
 
 .card{
@@ -127,7 +132,7 @@ form{
 }
 
 table {
- border-collapse: collapse;
+  border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     display: table;
@@ -161,4 +166,24 @@ tr:nth-child(even) {
     height: 25px;
     filter: invert(1);
     padding: 0 15px;
+}
+.detail{
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(189, 189, 189);
+  border-radius: 20px;
+  border: solid rgb(160, 158, 158);
+}
+.information{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+button{
+  padding: 5px;
+  border-radius: 10px;
 }
