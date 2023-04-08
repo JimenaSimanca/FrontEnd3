@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
 
       <div id="imgNavbar">
-        <img src="/images/DH.png" style={{ width: "150px" }} alt="imagenDH" />
+        <img src="/images/DH.png" style={{ width: "250px" }} alt="imagenDH" />
       </div>
       <div className="links">
         <Link to={routes.home}>

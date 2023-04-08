@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
@@ -125,7 +126,7 @@ h2{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 100vw;
+  width: 80vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -155,8 +156,8 @@ tr:nth-child(even) {
   margin: 20px;
 }
 .dark{
-  background-color: #12121296;
-  color: white;
+  background-color: #11111196;
+  color: rgb(255, 255, 255);
 }
 .dark > a {
   color: white;
