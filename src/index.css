@@ -126,7 +126,7 @@ h2{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 80vw;
+  width: 100vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -162,6 +162,10 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+.dark >.information{
+  background-color: #868686;
+  color: white;
+}
 .icon{
   width: 25px;
     height: 25px;
@@ -169,10 +173,7 @@ tr:nth-child(even) {
     padding: 0 15px;
 }
 .detail{
-  margin-left: 200px;
-  margin-right: 200px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: rgb(189, 189, 189);
