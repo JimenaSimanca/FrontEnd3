@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { useGlobalSates } from "./utils/Context";
 
 const Card = ({ name, username, id }) => {
@@ -13,7 +12,19 @@ const Card = ({ name, username, id }) => {
     if (!encontrar) {
       favoritos.push(odontologo);
     }
+
+    localStorage.setItem("favs", JSON.stringify(favoritos));
   };
+
+  const removeFav = () => {
+    const favoritos = JSON.parse(localStorage.getItem("favs")) || [];
+    const nuevosFavoritos = favoritos.filter((doc) => doc.id !== id);
+    localStorage.setItem("favs", JSON.stringify(nuevosFavoritos));
+  };
+
+  const favoritos = JSON.parse(localStorage.getItem("favs")) || [];
+  const estaEnFavoritos = favoritos.some((doc) => doc.id === id);
+
   return (
     <div className={`card ${state.theme}`}>
       {/* En cada card deberan mostrar en name - username y el id */}
@@ -29,11 +40,15 @@ const Card = ({ name, username, id }) => {
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
       </Link>
       <button onClick={addFav} className="favButton">
-        Add fav
-      </button> 
-      
+        ⭐
+      </button>
+      {estaEnFavoritos ? (
+        <button onClick={removeFav} className="favButton">
+          🗑️
+        </button>
+      ) : null}
     </div>
   );
-  };
+};
 
 export default Card;
